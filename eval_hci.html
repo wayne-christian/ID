@@ -1,0 +1,479 @@
+<!doctype html>
+<html>
+		<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>Week 2: Intro to HTML & CSS</title>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		</head>
+		<body>
+<div class="reveal">
+          <div class="slides">
+    <section data-background-transition="convex" data-background="#333333">
+              <h2 >Hello</h2>
+              <p style="color:#F8AA00">Interaction Designers</p>
+            </section>
+    <section data-background-transition="convex" data-background-video="https://assets.awwwards.com/awards/external/2017/10/59e9f2bdef660.mp4" data-background-video-loop="loop">
+              <h3>Intro to Evaluation in Interaction Design</h3>
+		<p>(or refresher for some!)</p>
+            </section>
+    <section  data-background-video="assets/oz.mp4" data-background-video-loop="loop">
+              <h3>Last Week</h3>
+              <p class="fragment"><strong>Prototyping</strong></p>
+              <p class="fragment">– Sketching</p>
+              <p class="fragment">– Lo-fi prototypes</p>
+              <p class="fragment">– Hi-fi prototypes</p>
+              <p class="fragment">– Wizard of Oz</p>
+            </section>
+    <section data-background-transition="convex">
+              <h3>Today</h3>
+              <p class="">Evaluation in Human-Computer Interaction</p>
+              <p class="fragment"><strong>1:Background</strong></p>
+              <p class="fragment"><strong>2: Methods:</strong></p>
+              <p class="fragment">– Inspection and Testing</p>
+              <p class="fragment">– Laboratory and Field studies</p>
+              <p class="fragment">– Qualitative VS Quantitative</p>
+              <p class="fragment">– Quantitative</p>
+            </section>
+     
+    <section data-background-video="https://assets.awwwards.com/awards/external/2016/11/583ed4f7c26b8.mp4" data-background-video-loop="loop">
+              <p>Background</p>
+              <h3>Remember: HCI explores how people interact with technology.</h3>
+            </section>
+    <section data-background-transition="convex" data-background="assets/hci1.png" data-background-size="600px" data-background-color="#fff" > </section>
+    <section>
+              <h3>How can we find out whether this interaction works out as intended?</h3>
+            </section>
+    <section data-background-video="assets/drill.mp4" > </section>
+    <section>
+              <h3>Evaluation in HCI</h3>
+              <p class="fragment tight">Put your systems to the test – evaluate them: </p>
+              <p class="fragment tight">A lot of work in HCI can only be tested in action, value emerges from interaction.</p>
+              <p class="fragment tight">Continuous process throughout development cycle – that is also why we need prototypes and iterative development!</p>
+              <p class="fragment tight">Design and evaluation are complementary aspects of HCI – one cannot stand without the other.</p>
+            </section>
+    <section>
+              <h3> Evaluation Goals</h3>
+              <p class="fragment tight">Understand whether systems work as intended for different user groups and in a range of settings – remember initial requirements establishment!</p>
+              <p class="fragment tight">Understand how systems can be improved, e.g., whether a certain feature adds benefits for users</p>
+              <p class="fragment tight">Understand the effects that a system may have on its users, e.g., their emotional state, or their attitudes – this can be really broad! </p>
+            </section>
+             <section data-background-video="https://assets.awwwards.com/awards/external/2017/01/awwwards-sotd-Obrigado Coconut Water-drag-interaction-animation-product.mp4" data-background-video-loop="loop">
+              <p style="color: #222"> Example: Food App</p>
+			  </section>
+    <section>
+              <h3> Example: Food App</h3>
+              <p class="fragment tight">Designing an app to support healthy eating…</p>
+		<p class="fragment tight">Is the app usable on a very basic level? </p>
+             <p class="fragment tight">Can users access all of its functionalities?</p>
+              <p class="fragment tight">Is it better to get users to take pictures of their meals rather than typing in the same information?</p>
+		<p class="fragment tight">Does the app promote healthy eating? </p>
+           <p class="fragment tight">This is the single most difficult bit. It’s not just about statements and attitudes, but about behaviour! </p>
+            </section>
+    <section>
+              <h3> Evaluation is a core aspect of interaction design.</h3>
+            </section>
+    <section>
+              <h3>2. Methods</h3>
+              <p class="fragment tight">Mostly evolved from research methods in social sciences and engineering. Long history in usability engineering, but increasing focus on user experience.</p>
+            </section>
+    <section>
+              <p>We are going to look at:</p>
+              <p class="fragment tight">2.1 Inspection vs. testing</p>
+              <p class="fragment tight">2.2 Qualitative vs. quantitative</p>
+              <p class="fragment tight">2.3 Lab vs. field</p>
+            </section>
+    <section>
+              <h3>2.1 Inspection vs. testing</h3>
+              <p> Two fundamentally different approaches:</p>
+              <p class="fragment tight">Inspection relies on experts and heuristics / guidelines</p>
+              <p class="fragment tight">Testing relies on users (i.e. actual people)</p>
+              <p class="fragment tight">Both approaches come with advantages and disadvantages</p>
+              <p class="fragment tight">Can be applied at different points of the development cycle </p>
+            </section>
+    
+             <section data-background-transition="convex" data-background="assets/inspection.gif" data-background-size="400px" >
+      <h3>Inspection</h3>
+    </section>
+             
+             <section>
+              <h3> 2.1 Inspection: Overview</h3>
+              <p>Evaluation approach, invites experts to comment on a system, or that applies heuristics and guidelines which allow non-experts to function as such.</p>
+              <p class="fragment tight"> Mainly applied in usability engineering.</p>
+              <p class="fragment tight"><strong>example:</strong> Moving into off-campus housing. When looking at places, you can either bring a parent to tell you whether a place is okay, or you can google checklists and try to do the job yourself. </p>
+            </section>
+    <section>
+              <h3>2.1 Inspection: Approaches</h3>
+              <p>A Heuristic Evaluation uses existing heuristics to inspect systems: it asks whether system complies with guidelines.</p>
+		<p class="fragment tight">Carried out by a small number of persons who produce a written report of their inspection; can be members of the development team</p>
+        <p class="fragment tight">Examples of heuristics: Shneiderman’s Eight Golden Rules, Nielsen’s 10 Usability Heuristics</p>
+                </section>
+    <section>  
+              <h3>2.1 Inspection: Approaches (Heuristic eval)</h3>
+              <p class="fragment tight">“Is system status always visible?”</p>
+              <p class="fragment tight">“Does system give sufficient feedback?”</p>
+              <p class="fragment tight">“Does system produce adequate responses to user errors?” </p>
+              <p class="fragment tight">Assessment of critical aspects of interaction between user and system with the help of heuristics</p>
+            </section>
+    <section>  
+              <h3>2.1 Inspection: Approaches</h3>
+              <p class="small">(Heuristic Evaluation ct’d)</p>
+              <p> <strong>Three main stages:</strong></p>
+              <p class="fragment tight">Briefing: Provide background information on system, introduce guidelines, potentially scoring system.</p>
+              <p class="fragment tight">Inspection: Experts individually inspect system and take notes.</p>
+              <p class="fragment tight">Debriefing: Team gets together and discusses findings, produces final report.</p>
+                </section>
+    <section>  
+              <h3> 2.1 Inspection: Approaches</h3>
+              <p> A Cognitive Walkthrough invites experts to imagine how new users would interact with a system to identify potential interaction problems.</p>
+              <p class="fragment tight"><strong>Two main stages:</strong></p>
+              <p class="fragment tight">Setting an evaluation task – what steps would users have to take to arrive at a certain goal?</p>
+              <p class="fragment tight">Carrying out the task and taking notes with respect to sub-tasks, i.e., visibility and availability of correct action, and quality of feedback 
+         </p>
+            </section>
+    <section> 
+              <h3>2.1 Inspection: Benefits</h3>
+              <p>What are the benefits of an inspection?</p>
+              <p class="fragment tight"> Quick</p>
+              <p class="fragment tight"> Cheap(ish)</p>
+              <p class="fragment tight"> Easily repeatable</p>
+              <p class="fragment tight">Applicable at most stages of the dev process</p>
+              <p class="fragment tight">Easily translates into action items for developers</p>
+              <p class="fragment tight">Likely to identify the biggest (usability) issues that need to be addressed by developers and designers</p>
+                </section>
+    <section>  
+               
+              <h3>2.1 Inspection: Challenges</h3>
+              <p>What are risks and challenges?</p>
+              <p class="fragment tight">Availability and affordability of experts</p>
+              <p class="fragment tight">Correct interpretation of guidelines</p>
+              <p class="fragment tight">What if heuristics / guidelines don’t apply?</p>
+              <p class="fragment tight">Think back to week 2: Designing for specific user groups – can be hard to anticipate!</p>
+              <p class="fragment tight">No insights into how actual users would interact with system – could miss important points! </p>
+            </section>
+    <section>
+             <section data-background-transition="convex" data-background="assets/simp.gif" data-background-size="400px" >
+      <h3>2.1 Testing</h3>
+    </section>
+              <h3> 2.1 Testing: Overview</h3>
+              <p>Alternative evaluation approach involves users in the testing of a system, and gathers their feedback to identify areas for improvement, validate features, or gain insights into how system affects them.</p>
+              <p class="fragment tight">Example: Baking cookies. When you’re done, you might wonder whether they’re any good, and you offer some to your roommates. One loves them, another thinks they’re okay, so you’re probably good. </p>
+            </section>
+    <section data-background="assets/hci2.png" data-background-size="400px" data-background-color="#fff" >
+              <h3 style="color: #222">2.1 Testing: Procedure</h3>
+            </section>
+    <section data-background="assets/hci3.png" data-background-size="500px" data-background-color="#fff" >
+              <h3>2.1 Testing: Example</h3>
+              <p class="small">A/B testing: Testing two different versions of a system in a controlled environment</p>
+                </section>
+    <section>
+              <h3> 2.1 Testing: Example</h3>
+              <p>Data collection:</p>
+              <p class="fragment tight"><strong>During interaction:</strong> Observations and metrics</p>
+              <p class="fragment tight"><strong>Post-interaction:</strong> Gather feedback with standardized questionnaires</p>
+              <p class="fragment tight"><strong>Data analysis and interpretation:</strong>
+            Statistical methods! - More about this in next week (possibly) </p>
+            </section>
+    <section data-background="assets/cookies.png" data-background-size="500px" data-background-color="#fff" >
+              <p class="small" style="color: #222"> 2.1 Testing: Example</p>
+              <p class="fragment tight small" style="color: #222"><strong>What could be problems?</strong></p>
+              <p class="fragment tight small bullet" style="color: #222">On a diet</p>
+              <p class="fragment tight small bullet" style="color: #222">Just ate lunch</p>
+              <p class="fragment tight small bullet" style="color: #222">Doesn’t like cookies</p>
+              <p class="fragment tight small bullet" style="color: #222">Only likes chocolate cookies</p>
+              <p class="fragment tight small bullet" style="color: #222">Loves all kinds of foods</p>
+              <p class="fragment tight small bullet" style="color: #222">Would eat cookie once, but not again</p>
+            </section>
+    <section>
+              <h3>2.1 Testing: Benefits</h3>
+              <p class="fragment tight">What are the benefits of testing?</p>
+              <p class="fragment tight">Actual feedback from real people</p>
+              <p class="fragment tight">Insights into how people interact with your system in the lab or field</p>
+              <p class="fragment tight">Scientific approach to evaluations in HCI </p>
+              <p class="fragment tight">“Real-world” testing = higher validity!</p>
+                </section>
+    <section> 
+               
+              <h3>2.1 Testing: Challenges</h3>
+              <p>What are risks and challenges?</p>
+              <p class="fragment tight">Requires planning, takes time!</p>
+              <p class="fragment tight">Recruiting the right sample can be difficult</p>
+              <p class="fragment tight">Additional knowledge necessary to analyse and interpret results – results need to be made actionable</p>
+              <p class="fragment tight">People tend to like what they know – what does that mean in terms of innovation and creativity?</p>
+              <p class="fragment tight">Requires basic knowledge in experimental design and data analysis, and takes time! </p>
+            </section>
+    <section>
+              <h3>2.1 Inspection vs. Testing</h3>
+              <p>How to decide which method to use?</p>
+              <p class="fragment tight">What is the status of your system? Low-fi vs. hi-fi and more polished prototypes.</p>
+              <p class="fragment tight">What questions are you trying to answer? Interface design considerations vs. user interaction.</p>
+              <p class="fragment tight"> How much time do you have, what is your budget, and what is your geographical location?</p>
+              <p class="fragment tight">Methods can be complementary – try to run inspections before entering user testing stages!</p>
+            </section>
+    <section>
+              <p>   Examples – Would you opt for an inspection or testing?</p>
+            </section>
+    <section>
+              <p> 2.1 Inspection or Testing?</p>
+              <p>Healthy eating app for seniors </p>
+               
+              <p> <img src="assets/oldapp.png" />  </p>
+                 
+              <p class="fragment tight">Hard to predict needs, but also hard to recruit a representative sample…</p>
+            </section>
+    <section>
+              <p> 2.1 Inspection or Testing?</p>
+              <p>Your website / portfolio</p>
+               
+              <p> <img src="assets/hci3.webp"/>  </p>
+                     
+              <p class="fragment tight">Does need some evaluation because it should look good. How much is too much?</p>
+            </section>
+    <section>
+              <p> 2.1 Inspection or Testing?</p>
+              <p>Fashion retailer website (online shop)</p>
+              <p> <img src="assets/fashion.png"/>  </p>
+                     
+              <p class="fragment tight"> Experts can tell you about functionality, but what about image and experience?</p>
+                </section>
+    <section>
+              <p> 2.1 Inspection or Testing?</p>
+              <p>Player input for a movement-based dance game </p>
+              <p> <img src="assets/dance.png"/>  </p>
+                     
+              <p class="fragment tight">How can suitability of movements be assessed?</p>
+                </section>
+    <section>
+              <p>  
+        Inspections and testing can provide valuable insights into user interactions with systems.</p>
+            </section>
+    <section>
+              <p >Inspections are usually quicker, testing can provide deeper insights, and both can complement each other. </p>
+            </section>
+    <section>
+              <p>2.1 Inspection vs. testing</p>
+              <p><strong>2.2 Qualitative vs. quantitative </strong></p>
+              <p>2.3 Lab vs. field</p>
+            </section>
+    <section>
+              <h3>2.2 Qualitative vs. Quantitative</h3>
+              <p>Evaluation methods that test systems with users can adopt qualitative or quantitative approaches (or combine both)</p>
+              <p class="fragment tight">As designer / researcher, you need to decide whether your goal is to explore a phenomenon, or if you are interested in large-scale effects</p>
+              <p class="fragment tight">Choice of approach often determines whether successful insights are gained…</p>
+                </section>
+    <section>  
+              <h3>2.2 Qualitative vs. Quantitative</h3>
+              <p>Qualitative research is interested in quality rather than quantity and asks about the experience of the individual</p>
+              <p class="fragment tight"><strong>Instruments:</strong></p>
+              <p class="fragment tight">In-depth observations</p>
+              <p class="fragment tight">Focus groups</p>
+              <p class="fragment tight">Structured and unstructured interviews</p>
+              <p class="fragment tight"><strong>Analysis:</strong></p>
+              <p class="fragment tight">Thematic Analysis, Grounded Theory</p>
+            </section>
+    <section>  
+              <h3>2.2 Qualitative vs. Quantitative</h3>
+              <p>Qualitative research usually works with smaller number of participants</p>
+              <p class="fragment tight">Data analysis requires effort – although it is “just” reading, making sense of data can be tricky</p>
+              <p class="fragment tight">Challenge: Identifying dominant themes</p>
+              <p class="fragment tight">Benefit: Thorough understanding of what is going on</p>
+                </section>
+    <section>  
+              <h3> 2.2 Qualitative vs. Quantitative</h3>
+              <p> Quantitative research is interested in quantity of phenomena and asks about the experience of many, i.e., average user </p>
+              <p class="fragment tight"> Instruments: </p>
+              <p class="fragment tight"> Questionnaires </p>
+              <p class="fragment tight"> Metrics </p>
+              <p class="fragment tight"> Analysis: </p>
+              <p class="fragment tight"> Statistical data analysis (e.g., working with means and variance, inferential testing to understand data)
+         
+          </p>
+            </section>
+    <section>  
+               
+              <h3>2.2 Qualitative vs. Quantitative</h3>
+              <p class="fragment tight"> Quantitative research works with bigger user groups </p>
+              <p class="fragment tight">Data analysis is relatively quick, but requires statistical knowledge </p>
+              <p class="fragment tight"> Challenge: Choosing the right instruments (questionnaires etc.) and getting data analysis right </p>
+              <p class="fragment tight"> Benefit: Thorough understanding of the bigger picture
+         
+          </p>
+            </section>
+    <section>  
+              <h3>Examples – Would you opt for a qualitative or quantitative approach?</h3>
+              <p class="fragment tight">1. Two smartphone interfaces. </p>
+              <p class="fragment tight">2. Online bereavement support. </p>
+              <p class="fragment tight">3. Multiplayer game for girls. </p>
+              <p class="fragment tight">4. New interface for blackboard. </p>
+              <p class="fragment tight">5. Dating app. </p>
+              <p class="fragment tight">6. City council website. </p>
+              <p class="fragment tight">7. Games for humans and cats.</p>
+            </section>
+    <section>
+              <p> <strong>Qualitative </strong>– in-depth understanding of small group of users, exploring phenomena.</p>
+              <p> <strong>Quantitative</strong> – in-depth under-standing of the average user, validating effects.</p>
+            </section>
+    <section>
+              <p>2.1 Inspection vs. testing</p>
+              <p>2.2 Qualitative vs. quantitative</p>
+              <p><strong>2.3 Lab vs. field</strong></p>
+            </section>
+    <section>
+              <h3>2.3 Lab vs. Field</h3>
+              <p class=""> Evaluation methods that test systems with users can be carried out in the lab or the field. </p>
+              <p class="fragment tight"> <strong>Lab:</strong> any kind of controlled environment that you create to test your system, e.g., a room on campus, a coffee shop that you meet your testers at, … </p>
+              <p class="fragment tight"><strong>Field:</strong> the “natural habitat” of your users, e.g., at the office, at home, on the train, … </p>
+               
+                </section>
+    <section>  
+              <h3>2.3 Lab vs. Field</h3>
+              <p class=""> Why worry about the differences? </p>
+              <p class="fragment tight"> Each of the environments provides different insights </p>
+              <p class="fragment tight"> Each comes with specific limitations </p>
+              <p class="fragment tight"> Depending on the question that you’re trying to answer, one or the other may be more suited</p>
+                </section>
+    <section>  
+               
+              <h3> 2.3 Lab vs. Field</h3>
+              <p class=""> <strong>Advantages of testing in the lab:</strong> </p>
+              <p class="fragment tight">Controlled environment </p>
+              <p class="fragment tight"> Maximum surveillance potential </p>
+              <p class="fragment tight"> Disadvantages of testing in the lab: </p>
+              <p class="fragment tight"> Validity – it is an artificial environment… </p>
+              <p class="fragment tight"> Longitudinal evaluations tiresome for users </p>
+              <p class="fragment tight"> Requires testing facilities (or potential confounds)
+         
+         
+          </p>
+            </section>
+    <section>  
+               
+              <h3> 2.3 Lab vs. Field</h3>
+              <p class=""> <strong>Advantages of testing in the field:</strong> </p>
+              <p class="fragment tight">Natural habitat = ecological validity! </p>
+              <p class="fragment tight">Easier longitudinal deployment </p>
+              <p class="fragment tight">Disadvantages of testing in the field: </p>
+              <p class="fragment tight">Confounds </p>
+              <p class="fragment tight">User feedback may be more difficult to obtain </p>
+              <p class="fragment tight">Methodologically challenging</p>
+                </section>
+    <section>  
+              <h3> 2.3 Lab vs. Field</h3>
+              <p class=""> <strong>Which approach should you choose?</strong> </p>
+              <p class="fragment tight">Depends on the question you are trying to answer (again…) </p>
+              <p class="fragment tight"> User group you’re working with </p>
+              <p class="fragment tight">Type of system you’re developing </p>
+              <p class="fragment tight">Depends on availability of resources  </p>
+              <p class="fragment tight">Utopia: Combine both approaches to get maximum amount of insight </p>
+               
+                </section>
+    <section>
+           
+         
+		<p class="">Can you think of a system that you’d have to test in the lab?</p>
+		<p class="fragment tight">Can you think of a system that you’d have to test in the field?</p>
+		<p class="fragment tight"><strong>Lab:</strong> controlled but not necessarily realistic environment. </p>
+		<p class="fragment tight"><strong>Field:</strong> realistic but not necessarily easy to research environment. </p>
+            </section>
+    <section>
+              <h3>3. Functionality and Experience</h3>
+            </section>
+    <section>
+              <h3>3. Functionality and Experience</h3>
+              <p><strong>Functionality:</strong> Does system enable the user to work efficiently and effectively? Is it inclusive?</p>
+       <p><strong>User Experience (UX):</strong> What is the subjective experience when interacting with the system?
+        Human Factors and Ergonomics vs. a more holistic approach in Human-Computer Interaction. Is interaction pleasurable?
+         
+         
+         </p>
+            </section>
+    <section>  
+               
+              <h3>What might be advantages of designing for a positiveuser experience?</h3>
+              <p class="fragment tight">Whether users engage with technology is not just about functionality, but also about hedonic aspects.</p>
+              <p class="fragment tight"> How does interaction feel? How do we see ourselves  using a system, and what image does it project?</p>
+            </section>
+    <section>
+              <h3>3. Functionality and Experience</h3>
+              <p class="fragment tight">Evaluations of user experience ask questions beyond usability and accessibility</p>
+              <p class="fragment tight">Stronger link with psychology (and sometimes marketing and market research)</p>
+              <p class="fragment tight">Goal: Assessing the overall experience that users have when interacting with a system or technology – what emotions does interaction stimulate, and how do users feel about themselves and the system?</p>
+               
+               
+                </section>
+    <section>  
+              <h3>3. Functionality and Experience</h3>
+              <p class="fragment tight">User Experience can be assessed through evaluations</p>
+              <p class="fragment tight">UX methods are closer to psychology, usually user testing through experimental setting, e.g., scales to measure affect</p>
+              <p class="fragment tight">Approaches: Standardized questionnaires, physiological measures, but also interviews etc.</p>
+               
+               
+               
+             
+            </section>
+    <section>
+              <p>  
+        Evaluations can help you understand users and what drives them (and not just assess system quality).
+        But there’s a downside… </p>
+            </section>
+    <section>
+              
+      <h3>Ethics in HCI</h3>
+              <p>If you are working with people, you need to consider their needs throughout the research process</p>
+              <p class="fragment tight">Ethical responsibilities</p>
+              <p class="fragment tight">Ensure legals are in place if working in industry</p>
+              <p class="fragment tight">Informed consent</p>
+              <p class="fragment tight">Right to withdraw</p>
+              <p class="fragment tight">Anonymizing data</p>
+              <p class="fragment tight">Try to anticipate issues that might emerge…</p>
+		
+            </section>
+    <section>
+              <h3>Back to the beginning…</h3>
+              <p>Example: Food App</p>
+              <p class="fragment tight">Designing an app to support healthy eating…</p>
+              <p class="fragment tight">Is the app usable on a very basic level? Can users access all of its functionalities?</p>
+              <p class="fragment tight">Is it better to get users to take pictures of their meals rather than typing in the same information?</p>
+              <p class="fragment tight"> Does the app promote healthy eating? This is the single most difficult bit. It’s not just about statements and attitudes, but about behaviour! </p>
+            </section>
+    <section>
+              <p> Human-Computer Interaction looks at the design and evaluation of how people interact with technology.
+        Range of evaluation approaches is available – remember inspection vs. testing, and different kinds of tests and experiments.
+        Choice of approach & methods is an important step towards gaining valuable insights and successfully feeding results back into development cycle!
+        Do you have any questions? </p>
+            </section>
+  </div>
+        </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="lib/js/head.min.js"></script> 
+<script src="js/reveal.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="https://code.highcharts.com/highcharts.js"></script> 
+<script src="https://code.highcharts.com/highcharts-more.js"></script> 
+<script src="https://code.highcharts.com/modules/solid-gauge.js"></script> 
+<script src="js/themes/mypbtheme.js"></script> 
+<script src="js/jquery.animateNumber.min.js"></script> 
+<script src="js/main.js"></script> 
+<script>
+	var link = document.createElement( 'link' );
+	link.rel = 'stylesheet';
+	link.type = 'text/css';
+	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+</body>
+</html>
