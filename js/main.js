@@ -23,9 +23,8 @@ Reveal.initialize({
 	progress: true,
 	history: true,
 	center: true,
-	width: '80%',
-	height: '100%',
-
+	width: 1024,
+	height: 768,
 	transition: 'concave', // none/fade/slide/convex/concave/zoom
 	dependencies: [{
 			src: 'lib/js/classList.js',
